@@ -53,6 +53,21 @@ def test_report_notices_lifts_that_open():
     assert next(r for r in rows if r["category"] == "lift")["status"] == "open"
 
 
+def test_every_item_in_every_category_has_at_least_two_numeric_values():
+    """The assignment needs two numeric values per item; check each category of each source."""
+    from conftest import fixture_bytes as fb
+    rows = (convert_report(fb("snow_report.html"), RUN) + convert_snotel(fb("snotel.json"), RUN)
+            + convert_nws(fb("nws_grid.json"), RUN))
+    for r in rows:
+        numeric = [c for c in NUMERIC if r.get(c) is not None]
+        assert len(numeric) >= 2, (r["item_id"], numeric)
+
+
+def test_terrain_areas_report_open_and_hold():
+    terrain = [r for r in convert_report(fixture_bytes("snow_report.html"), RUN) if r["category"] == "terrain"]
+    assert len(terrain) == 4 and all(r["is_open"] == 0 and r["on_hold"] == 0 for r in terrain)
+
+
 def test_report_rows_use_known_columns_and_unique_item_ids():
     rows = convert_report(fixture_bytes("snow_report.html"), RUN)
     assert all(set(r) <= KNOWN for r in rows)

@@ -216,7 +216,8 @@ def convert_report(content, run_date):
             continue
         seen.add(key)
         rows.append({"item_id": key, "item": name, "category": "terrain", "area": "Hike-to terrain",
-                     "status": status, "is_open": 1 if status in ("open", "hike") else 0})
+                     "status": status, "is_open": 1 if status in ("open", "hike") else 0,
+                     "on_hold": 1 if status == "hold" else 0})
     for key, t in trails.items():
         rows.append({"item_id": key, "item": t["item"], "category": "trail", "area": t["area"], "level": t["level"],
                      "status": t["status"], "is_open": 1 if t["status"] == "open" else 0,
