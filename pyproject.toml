@@ -1,0 +1,13 @@
+[project]
+name = "telltracker"
+version = "0.1.0"
+description = "Daily tracker for Telluride and Mountain Village lifts, trails and snowfall"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
