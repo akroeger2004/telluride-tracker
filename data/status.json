@@ -1,0 +1,25 @@
+{
+  "run_time": "2026-11-13T23:19:32Z",
+  "first_run_date": "2026-11-13",
+  "days_with_success": 1,
+  "items": 189,
+  "new_today": 0,
+  "gone_today": 0,
+  "sources": [
+    {
+      "name": "nws",
+      "ok": true,
+      "count": 1
+    },
+    {
+      "name": "snotel",
+      "ok": true,
+      "count": 9
+    },
+    {
+      "name": "telluride",
+      "ok": true,
+      "count": 179
+    }
+  ]
+}
