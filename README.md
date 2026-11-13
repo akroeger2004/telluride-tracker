@@ -89,7 +89,7 @@ moment it runs. A value a source does not report for an item is left empty.
 | `status` | Lifts, trails and terrain: `open`, `hold` (on hold) or `closed` (terrain can also be `hike`). Mountain: the snow condition reported (for example `variable`). | text |
 | `obs_date` | The date the value refers to, for the mountain, stations and forecast (SNOTEL reports the previous day) | date |
 | `is_open` | 1 if the lift, trail or terrain area is open (or open to hike), 0 if closed or on hold | 0/1 |
-| `on_hold` | 1 if a lift or trail is on hold | 0/1 |
+| `on_hold` | 1 if a lift, trail or hike-to terrain area is on hold | 0/1 |
 | `is_groomed` | 1 if a trail is groomed | 0/1 |
 | `hours_open` | Operating hours listed for a lift today; 0 when closed | hours |
 | `snow_depth_in` | Snow depth on the ground (mountain and stations) | inches |
