@@ -1,5 +1,5 @@
 {
-  "run_time": "2026-11-16T00:10:32Z",
+  "run_time": "2026-11-16T23:28:18Z",
   "first_run_date": "2026-11-13",
   "days_with_success": 4,
   "items": 189,
@@ -13,8 +13,8 @@
     },
     {
       "name": "snotel",
-      "ok": true,
-      "count": 9
+      "ok": false,
+      "count": 0
     },
     {
       "name": "telluride",
