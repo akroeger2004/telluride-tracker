@@ -2096,7 +2096,7 @@ date,item_id,item,source,category,area,level,status,obs_date,is_open,on_hold,is_
 2026-11-24,lift:sunshine-express,Sunshine Express,telluride,lift,Sunshine,,closed,,0,0,,0,,,,,,,,,,,,,,,,,,,
 2026-11-24,lift:ute-park,UTE Park,telluride,lift,Sunshine,,closed,,0,0,,0,,,,,,,,,,,,,,,,,,,
 2026-11-24,lift:village-express,Village Express,telluride,lift,Village,,closed,,0,0,,0,,,,,,,,,,,,,,,,,,,
-2026-11-24,mountain:telluride,Telluride Ski Resort,telluride,mountain,Telluride,,variable,2026-11-24,,,,,20,3,8,8,8,24,0,17,0,157,,,,27,32,18,,,
+2026-11-24,mountain:telluride,Telluride Ski Resort,telluride,mountain,Telluride,,variable,2026-11-24,,,,,20,3,8,8,8,24,0,17,0,157,,,,25,32,18,,,
 2026-11-24,station:1344,Alta Lakes (SNOTEL),snotel,station,San Juan Mountains,,,2026-11-22,,,,,26,,,,,,,,,,6.1,11.7,11290,18.7,30.2,8.6,,,
 2026-11-24,station:387,Cascade #2 (SNOTEL),snotel,station,San Juan Mountains,,,2026-11-22,,,,,2,,,,,,,,,,0.7,14.3,8990,23.2,39,13.5,,,
 2026-11-24,station:465,El Diente Peak (SNOTEL),snotel,station,San Juan Mountains,,,2026-11-22,,,,,10,,,,,,,,,,2.1,12.3,10210,19.2,35.8,3.7,,,
